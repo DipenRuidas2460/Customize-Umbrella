@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style.css" />
+    <title> Customize Umbrella </title>
+</head>
+
+<body>
+
+    <div class="color-switcher">
+        <div class="switcher-btn">
+            <i class="fas fa-cog"></i>
+        </div>
+        <h3> select color </h3>
+
+        <div class="theme-buttons-container">
+            <span class="theme-buttons" data-color="#0d0d0e" style="background: #0d0d0e;"></span>
+            <span class="theme-buttons" data-color="#2c3236" style="background: #2c3236;"></span>
+            <span class="theme-buttons" data-color="#0d702e" style="background: #0d702e;"></span>
+            <span class="theme-buttons" data-color="#86235a" style="background: #86235a;"></span>
+            <span class="theme-buttons" data-color="#331a6d" style="background: #331a6d;"></span>
+            <span class="theme-buttons" data-color="#c6e247" style="background: #c6e247;"></span>
+            <span class="theme-buttons" data-color="#af4319" style="background: #af4319;"></span>
+            <span class="theme-buttons" data-color="#ad1414" style="background: #ad1414;"></span>
+        </div>
+    </div>
+
+    <div class="container" id="imgBox">
+        <div id="display_maintext">
+            <h3> Customize Umbrella </h3>
+        </div>
+        <div id="display_text1">
+            <h2>Customize your Umbrella</h2>
+        </div>
+        <div id="display_text2">
+            <h3>Upload a logo for an instant preview</h3>
+        </div>
+        <div id="display_text3">
+            <p>.png and .jpg files only.Max fileSize is 5MB</p>
+        </div>
+        <div id="input-image"><input type="file" accept="image/png, image/jpg" name="image" id="file" style="display: none;"
+            onchange="loadFile(event)">
+        </div>
+        <div class="container-img">
+            <button id="display-button"><label for="file"><img src="Images/upload_icon.svg" class="upload-icon"></label>
+                UPLOAD LOGO</button>
+        </div>
+        <!-- <div id="logo-container">
+            <img id="logo" src="Images/upload_icon.svg" alt="Logo">
+            <input type="file" id="logo-upload" accept="image/*">
+        </div> -->
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
